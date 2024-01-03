@@ -75,6 +75,10 @@ const config = {
       url: node_url('goerli'),
       accounts: accounts('goerli'),
     },
+    sepolia: {
+      url: node_url('sepolia'),
+      accounts: accounts('sepolia'),
+    },
     ropsten: {
       url: node_url('ropsten'),
       accounts: accounts('ropsten'),

@@ -85,6 +85,32 @@ const config: {[key: string]: DeployConfig} = {
       contractURI: '',
     },
   },
+  sepolia: {
+    collectionInitializeData: {
+      name: 'DopeNFTCollection',
+      symbol: 'DOPENFT',
+      metadataModule: '0x0000000000000000000000000000000000000000',
+      baseURI: 'baseURI',
+      contractURI: 'contractURI',
+      fundingRecipient: '0x0000000000000000000000000000000000000001',
+      royaltyBPS: 0,
+      collectionMaxMintableLower: 0,
+      collectionMaxMintableUpper: 0,
+      collectionCutoffTime: 0,
+      flags: 1,
+    },
+    feeConfig: {
+      feeRecipient: 'deployer',
+      platformFeeBPS: 500,
+    },
+    dopeNFTConfig: {
+      shouldDeploy: true,
+      name: 'DopeTest',
+      symbol: 'DOPETEST',
+      baseURI: '',
+      contractURI: '',
+    },
+  },
 };
 
 export default config;
